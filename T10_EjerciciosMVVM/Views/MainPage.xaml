@@ -14,8 +14,8 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Slider Name="sldSlider" Margin="50" Minimum="10" Maximum="60" TickFrequency="1" TickPlacement="TopLeft" Grid.Row="0"/>
-        <TextBlock Name="txtBox" Text="Texto de Ejemplo" FontSize="{Binding ElementName=sldSlider, Path=Value, Mode=TwoWay}" Grid.Row="1" />
-        <TextBox x:Name="txtRealValue" Text="{Binding ElementName=sldSlider, Path=Value, Mode=TwoWay}" Grid.Row="2"/>
+        <Slider Name="sldSlider" Margin="50" Minimum="10" Maximum="100" TickFrequency="1" TickPlacement="TopLeft" Grid.Row="0"/>
+        <TextBlock Name="txtBox" Text="Texto de Ejemplo" HorizontalAlignment="Center" FontSize="{Binding ElementName=sldSlider, Path=Value}" Grid.Row="1"/>
+        <TextBox x:Name="txtRealValue" Text="{Binding ElementName=sldSlider, Path=Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2"/>
     </Grid>
 </Page>
