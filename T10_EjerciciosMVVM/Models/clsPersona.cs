@@ -17,8 +17,8 @@ namespace T10_EjerciciosMVVM.Models
         #region constructores
         public clsPersona() 
         {
-            nombre = "";
-            apellido = "";
+            nombre = "Alvaro";
+            apellido = "Fernandez";
         }
         #endregion
         #region propiedades publicas
@@ -51,6 +51,7 @@ namespace T10_EjerciciosMVVM.Models
                     apellido = "";
                     NotifyPropertyChanged("Apellido");
                 }
+
                 nombre = value;
 
             }

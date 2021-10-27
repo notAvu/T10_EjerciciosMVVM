@@ -121,6 +121,7 @@
     </Compile>
     <Compile Include="Models\clsPersona.cs" />
     <Compile Include="ViewModels\Ejercicio2VM.cs" />
+    <Compile Include="ViewModels\TheRealEjercicio2.cs" />
     <Compile Include="Views\Ejercicio2.xaml.cs">
       <DependentUpon>Ejercicio2.xaml</DependentUpon>
     </Compile>
@@ -128,6 +129,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\TheRealEjercicio2.xaml.cs">
+      <DependentUpon>TheRealEjercicio2.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -156,6 +160,10 @@
     <Page Include="Views\MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\TheRealEjercicio2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
