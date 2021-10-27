@@ -21,9 +21,9 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock                          Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Text="Nombre"/>
-        <TextBox x:Name="nombreTB"          Grid.Column="1" Grid.Row="0" Margin="20"/>
-        <TextBlock                          Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Text="Apellido"/>
-        <TextBox x:Name="apellidoTB"        Grid.Column="1" Grid.Row="1" Margin="20"/>
+        <TextBlock Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Text="Nombre"/>
+        <TextBox x:Name="nombreTB" Text="{Binding OPersona.Nombre, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="0" Margin="20"/>
+        <TextBlock Grid.Column="0" Grid.Row="1" VerticalAlignment="Center" Text="Apellido"/>
+        <TextBox x:Name="apellidoTB" Text="{Binding OPersona.Apellido, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Grid.Column="1" Grid.Row="1" Margin="20"/>
     </Grid>
 </Page>

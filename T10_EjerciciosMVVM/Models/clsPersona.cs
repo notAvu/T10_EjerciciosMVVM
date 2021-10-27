@@ -8,16 +8,31 @@ namespace T10_EjerciciosMVVM.Models
 {
     public class clsPersona
     {
-        string nombre;
-        string apellido;
-
-        clsPersona() 
+        #region propiedades privadas
+        private string nombre;
+        private string apellido;
+        #endregion
+        #region constructores
+        public clsPersona() 
         {
-            nombre = "Alvaro";
-            apellido = "Fernandez Villar";
+            nombre = "";
+            apellido = "";
         }
+        #endregion
+        #region propiedades publicas
+        public string Apellido
+        { 
+            get { return apellido; } 
+            set { apellido = value;} 
+        }
+        public string Nombre 
+        { 
+            get{ return nombre; } 
+            set{ nombre = value; } 
+        }
+        #endregion
+        #region metodos
 
-        public string Apellido { get => apellido; set => apellido = value; }
-        public string Nombre { get => nombre; set => nombre = value; }
+        #endregion
     }
 }

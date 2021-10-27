@@ -25,6 +25,7 @@ namespace T10_EjerciciosMVVM
         public Ejercicio2()
         {
             this.InitializeComponent();
+            
         }
     }
 }

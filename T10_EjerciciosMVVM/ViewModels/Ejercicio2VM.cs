@@ -9,8 +9,11 @@ namespace T10_EjerciciosMVVM.ViewModels
 {
     public class Ejercicio2VM
     {
-        clsPersona oPersona;
-
-        public clsPersona OPersona { get => oPersona; set => oPersona = value; }
+        private clsPersona oPersona= new clsPersona();
+        public clsPersona OPersona
+        {
+            get { return oPersona; }
+            set { oPersona = value; }
+        }
     }
 }
